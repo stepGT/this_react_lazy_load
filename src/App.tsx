@@ -1,9 +1,10 @@
-import './App.css';
+import ItemsGrid from './components/ItemsGrid/ItemsGrid';
+import { IMAGES } from './images';
 
 function App() {
   return (
-    <div className="App">
-      App
+    <div>
+      <ItemsGrid data={IMAGES} />
     </div>
   );
 }
