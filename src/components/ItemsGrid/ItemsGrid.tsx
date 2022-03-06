@@ -1,5 +1,5 @@
 import styles from './ItemsGrid.module.css';
-
+import LoadableImage from '../LoadableImage/LoadableImage';
 export interface IItemsGrid {
   data: string[];
 }
@@ -10,7 +10,7 @@ const ItemsGrid = (props: IItemsGrid) => {
       {props.data.map((item, ix) => {
         return (
           <div key={ix} className={styles.item}>
-            <img src={item} />
+            <LoadableImage src={item} />
           </div>
         )
       })}
